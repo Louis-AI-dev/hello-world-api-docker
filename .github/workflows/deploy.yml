@@ -21,7 +21,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
-          images: 'DOCKER|mcr.microsoft.com/azuredocs/hello-world:latest'
+          images: 'mcr.microsoft.com/azuredocs/hello-world:latest'
           # On remplacera l'image par celle qu'on construit juste après
 
       - name: Build and push custom Docker image
